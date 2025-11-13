@@ -97,7 +97,7 @@ const HealthWorkerDashboard = () => {
   setTriageResult(null);
 
   try {
-    const response = await fetch("http://127.0.0.1:5000/triage", {
+    const response = await fetch("https://healthnet-ai-backend.onrender.com/triage", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
